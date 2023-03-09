@@ -1,0 +1,28 @@
+<div class="container" id="WEBVTT-container">
+    <p>Follow the steps outlined to convert to an editable WEBVTT file.</p>
+    <ol>
+        <li>Copy the closed captions from the YouTube video
+            <ol>
+                <li><img src="https://norgenbiotek.com/sites/default/files/Webinars/WEBVTT_Conversion_Tutorial/step1.jpg"></li>
+                <li><img src="https://norgenbiotek.com/sites/default/files/Webinars/WEBVTT_Conversion_Tutorial/step2.jpg"></li>
+                <li><img src="https://norgenbiotek.com/sites/default/files/Webinars/WEBVTT_Conversion_Tutorial/step3.jpg"></li>
+            </ol>
+        </li>
+        <li>Paste them in the text area below</li>
+        <li>Enter the length of the video as shown on YouTube</li>
+        <li>Click "Convert"</li>
+        <li>Click the download link! (the file name of the download will be "webinar-cc.vtt")</li>
+    </ol>
+    <p>Please copy and paste the YouTube auto-generated English captions into the text box below.</p>
+    <form id="caption_form" name="caption_form">
+        <label for="yt_cc">YouTube Closed Caption Transcript</label>
+        <textarea required name="yt_cc" id="yt_cc"></textarea>
+        <br>
+        <label for="final_timestamp">Length of Video</label>
+        <input required type="text" id="final_timestamp" name="final_timestamp" placeholder="1:14:14 = 1 hour, 14 minute, 14 second long video">
+        <br>
+        <br>
+        <input id="submit_cc" name="submit_cc" type="submit" value="Convert" class="btn btn-primary">
+        <a id="pseudo_dl" name="pseudo_dl" download href="" style="visibility: hidden;position: absolute;left:-10000px;"></a>
+    </form>
+</div>

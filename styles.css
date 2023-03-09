@@ -1,0 +1,20 @@
+#yt_cc{
+    width:100%;
+}
+ol {
+    counter-reset: item
+}
+li {
+    display: block
+}
+ol li:before {
+    content: counters(item, ".") " ";
+    counter-increment: item
+}
+ol li img{
+    width: 100%;
+    border:1px solid black;
+}
+#WEBVTT-container{
+    max-width:100%;
+}
